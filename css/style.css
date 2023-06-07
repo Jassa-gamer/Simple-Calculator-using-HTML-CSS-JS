@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: aliceblue;
+
+}
+.container{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: 60px;
+    grid-gap: 12px;
+    margin: auto;
+
+}
+.btn{  
+    background-color: whitesmoke;
+    border: 2px solid black;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn:last-child{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#inputBox{
+    width: 100%;
+    border: 2px solid rgb(255, 0, 0);
+    grid-column:1 / span 3;
+    margin: auto;
+    overflow: hidden;
+}
+#inputBox input{
+    border: 0px solid black;
+    width: 100%;
+    margin: 2px;
+    padding: 12px 0px;
+    
+
+}
